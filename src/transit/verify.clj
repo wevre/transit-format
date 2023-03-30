@@ -351,6 +351,8 @@
 
 (def supported-impls #{"transit-clj"
                        "transit-cljs"
+                       "transit-dart"
+                       "transit-cljd"
                        "transit-java"
                        "transit-jruby"
                        "transit-js"

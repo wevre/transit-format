@@ -195,6 +195,8 @@ marshal them to files for edn, json, json-verbose, and msgpack."
     (write-exemplar dir "map_mixed" "A mixed map" map-mixed)
     (write-exemplar dir "map_nested" "A nested map" map-nested)
 
+    (write-exemplar dir "cmap_null_key" "A cmap with null as a key" {nil "null as a key" [0 1] "array key forces cmap"})
+
     (write-exemplar dir "map_string_keys" "A map with string keys" {"first" 1, "second" 2, "third" 3})
 
     (write-exemplar dir "map_numeric_keys" "A map with numeric keys" {1 "one", 2 "two"})

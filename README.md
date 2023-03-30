@@ -1,3 +1,31 @@
+# Dart testing
+
+This fork of `transit-format` was created to facilitate testing of
+`transit-dart` and `transit-cljd`. Specific changes are:
+
+1. "transit-dart" and "transit-cljd" are added as supported implementations in
+   [`verify.clj`](https://github.com/wevre/transit-format/blob/master/src/transit/verify.clj#L352).
+
+2. Script files 'get-transit-dart' and 'get-transit-cljd' added to folder `bin`.
+
+3. An additional exemplar added to cover an edge case related to a known bug in
+   the `transit-java` implementation.
+
+To run the tests, create a folder to hold this repository and the transit-dart
+and transit-cljd repositories that will be downloaded.
+
+```
+mkdir transit-test
+cd transit-test
+git clone git@github.com:wevre/transit-format
+```
+
+Then from the `transit-format` folder run
+
+```
+bin/verify -impls dart cljd
+```
+
 # Transit
 
 Transit is a format and set of libraries for conveying values between applications written in different programming languages. This spec describes Transit in order to facilitate its implementation in a wide range of languages.

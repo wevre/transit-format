@@ -1,1 +1,1 @@
-#<URI http://example.com>
+#object[java.net.URI 0x4bc28c33 "http://example.com"]
