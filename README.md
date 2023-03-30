@@ -4,11 +4,11 @@ This fork of `transit-format` was created to facilitate testing of
 `transit-dart` and `transit-cljd`. Specific changes are:
 
 1. "transit-dart" and "transit-cljd" are added as supported implementations in
-   [`verify.clj`](https://github.com/wevre/transit-format/blob/master/src/transit/verify.clj#L352).
+   [`verify.clj`](https://github.com/wevre/transit-format/commit/d6358a495f84d3a64803c0ce3d7cf51434df62f4#diff-a20cb43b9019592d9c376e7919c41d7400f7230e5bfd557b6e4c272b5681ece2).
 
 2. Script files 'get-transit-dart' and 'get-transit-cljd' added to folder `bin`.
 
-3. An additional exemplar added to cover an edge case related to a known bug in
+3. An additional [exemplar added](https://github.com/wevre/transit-format/commit/d6358a495f84d3a64803c0ce3d7cf51434df62f4#diff-0d6a2c7f49e3daafe4ddee80ffb232bc7be4c17a2e077e04fc2f0edade5d9d69) to cover an edge case related to a known bug in
    the `transit-java` implementation.
 
 To run the tests, create a folder to hold this repository and the transit-dart
