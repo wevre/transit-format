@@ -12,7 +12,8 @@ fi
 if [ ! -f "transit-cljd/lib/cljd-out/wevre/roundtrip.dart" ]; then
   echo "compiling wevre.roundtrip"
   cd transit-cljd
-  clj -M:cljd compile wevre.roundtrip
+  clj -M:cljd upgrade
+  clj -M:cljd compile wevre.roundtrip 2> errors.txt || echo "compile failure"
 else
   echo "roundtrip.dart exists"
 fi
